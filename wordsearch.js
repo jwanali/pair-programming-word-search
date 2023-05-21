@@ -5,8 +5,9 @@ const wordSearch = (letters, word) => {
             return true
          }
      }
-    const vertical = transpose(horizontalJoin);
-     for (l of  vertical) {
+    const vertical = transpose(letters);
+    const vertical1 = vertical.map(ls => ls.join(''))
+     for (l of  vertical1) {
         if (l.includes(word)) {
             return true
          }
